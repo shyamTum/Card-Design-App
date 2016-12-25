@@ -1,0 +1,66 @@
+<template name="chooseValue">
+  <div class="row text-center">
+    <div class="sub-nav-header">
+      {{>currentProgressNavigation}}
+      <img src="/assets/images/icons/value_icon_active.png" alt="laden waehlen"/>
+
+      <h1>2. Wert auswählen</h1>
+
+      <form id="select-value" action="#">
+        <p>
+          <select class="turnintodropdown">
+            <option>Bitte Gutschein-Wert wählen</option>
+            <option><span class="value">15.00</span>EUR</option>
+            <option><span class="value">20.00</span>EUR</option>
+            <option><span class="value">25.00</span>EUR</option>
+            <option><span class="value">50.00</span>EUR</option>
+            <option><span class="value">75.00</span>EUR</option>
+            <option><span class="value">100.00</span>EUR</option>
+          </select>
+        </p>
+      </form>
+    </div>
+    <div class="col-md-12 text-center">
+      <a href="/designs" class=" btn checkoutButton">Design wählen</a><br>
+    </div>
+  </div>
+
+
+
+  <div id="back-to-companies-link">
+    <a href="/companies">Zurück zu "Geschäft wählen"</a>
+  </div>
+
+  <div id="value-company-wrapper" class="row">
+    <div id="value-company-img" class="col-md-8 col-height">
+      <img src="assets/images/zaraStore.jpg" alt="zara store"/>
+    </div>
+
+    <div id="value-company-info" class="col-md-4 col-height col-top">
+      {{Bonbeo.getCompanyName}}
+
+      <h4>{{companyName}}</h4>
+
+      <table>
+        <tr>
+          <td>Branche:</td>
+          <td>Mode</td>
+        </tr>
+        <tr>
+          <td>Stadt:</td>
+          <td>München</td>
+        </tr>
+        <tr>
+          <td>Info:</td>
+          <td>Platzhalterinformation <br/>
+            über Geschäft oder Geschäftsbereiche
+          </td>
+        </tr>
+        <tr>
+          <td>Web:</td>
+          <td>www.example.com</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,142 @@
+/* common styles */
+
+.bold{
+  font-weight: bold;
+}
+
+#copyright{
+  padding-top: 16px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  border-top: 2px solid grey;
+}
+
+#logo {
+  display: none;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  background-color: #fff;
+  border-color: transparent;
+}
+
+.navbar-collapse{
+  background-color: #fff;
+}
+
+.navbar > .active > a {
+  color: #fff;
+}
+
+.navbar-header {
+  background-color: #fff;
+}
+
+#logo {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/*margin form page content to header*/
+.page-margin {
+  margin-top: 4%;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+  background-color: #fff;
+}
+
+.sub-nav-header {
+  width: 100%;
+}
+
+#search-field {
+  width: 68%;
+  margin: auto;
+  border: solid;
+}
+
+#select-field-value{
+  width: 80%;
+  margin: auto;
+  border-radius: 0px !important;
+  border: solid #000;
+}
+
+
+.form-control{
+  border-radius: 0px !important;
+}
+
+.company-item {
+  height: 250px;
+  margin: auto;
+  margin-top: 4%;
+  width: 50%;
+  a {
+    color: #000;
+  }
+}
+
+
+footer{
+  background-color: #333333;
+  color: #fff;
+  a{
+    color: #ffffff;
+  }
+}
+
+#footer-container{
+  width: 50%;
+  border: solid green;
+  margin: auto;
+  li {
+    list-style-type: none;
+    margin-right: 2%;
+  }
+}
+
+/* MEDIA QUERIES */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #main-nav {
+    float: left;
+    background-color: #fff;
+    margin-top: 106px;
+    margin-left: 60px;
+    with: 70%;
+
+  }
+
+  #logo {
+    display: block;
+    float: left;
+    width: 130px;
+  }
+
+  .sub-nav-header {
+    margin: auto;
+    width: 40%;
+  }
+
+  #searchField {
+    width: 80%;
+  }
+  ‚
+  .company-item {
+    width: 30%;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .company-item {
+    width: 24%;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

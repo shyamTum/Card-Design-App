@@ -1,0 +1,6 @@
+.idea/
+*.pdf
+.idea/*
+client/templates/editor.zip
+client/templates/editor/TextTest.jsx
+client/templates/editor/UserData.js

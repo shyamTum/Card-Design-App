@@ -1,0 +1,49 @@
+#search-results {
+  margin-top: 8%;
+  margin-bottom: 8%;
+  margin: auto;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-bottom: 0px;
+}
+
+input {
+  border: solid black 0px;
+  height: 44px;
+}
+
+#search-filter-nav{
+  margin-top: 4%;
+}
+
+#filter-wrapper{
+  margin: 0 auto;
+  width: 500px;
+  a{
+    color: #adadad;
+    font-size: 130%;
+    &:hover{
+
+    }
+  }
+  table {
+    width: 620px;
+    font-size: 120%;
+    th, td {
+      overflow: hidden;
+      width: 320px;
+    }
+  }
+
+  .open > .dropdown-menu {
+    display: block;
+    width: 620px;
+    margin-top: 26px;
+    padding: 12px;
+    background-color: #333;
+    color: #fff;
+  }
+}
+
+
+

@@ -1,0 +1,70 @@
+<template name="editor">
+<head>
+	<title>simple</title>
+	<style>
+		li ul { display: none; }
+
+		li:hover > ul {
+		  display: block;
+		  position: absolute;
+		}
+
+		li:hover li { float: none }
+
+		li:hover a { background: #1bc2a2 }
+
+		li:hover li a:hover { background: #2c3e50 }
+
+		ul ul {
+		  padding-left: 150px;
+		  width: 150px;
+		  height:10px;
+		}
+
+		ul ul:hover { background: #2c3e50 }	  
+		
+		
+		#image_div{
+    width:300px; 
+    height:200px; 
+    position:relative;
+    top:0px; 
+    left:25%
+}
+
+.image_div{position:absolute; width:300px; height:200px;}
+
+#target{
+    position:absolute;
+    height:20px;
+    width:20px;
+    background:url(http://files.softicons.com/download/system-icons/human-o2-icons-by-oliver-scholtz/png/128x128/actions/object-rotate-left.png) no-repeat top center #ffffff;
+	background-size:100%;
+    cursor:pointer; 
+    z-index:1; 
+    top:0; 
+    right:0;    
+}
+		
+		
+	</style>
+</head>
+
+<body>
+	<fieldset>
+		{{> editorBackBone}}
+	</fieldset>
+		
+</body>
+</template>
+
+
+<template name="editorBackBone">
+	<div>{{>React component=EditorFrame}}</div>
+</template>
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+<template name="checkout">
+  <div class="row text-center">
+    <div class="sub-nav-header">
+      {{>currentProgressNavigation}}
+      <img src="/assets/images/icons/donate_icon_active.png" alt="donate"/>
+      <h1>Bestellung abschließen</h1>
+    </div>
+  </div>
+
+  <div id="finishOrder" class="row">
+    <div class="col-md-6">
+      <div class="billingAdressFields">
+        <h4>Schritt 1: Deine Adresse</h4>
+        <p>
+          <label for="salutation">Anrede</label>
+          <input type="text" id="salutation" name="salutation" placeholder="" required maxlength="20"/>
+        </p>
+
+        <p>
+          <label for="firstname">Vorname</label>
+          <input type="text" id="firstname" name="firstname" placeholder="" required maxlength="20"/>
+        </p>
+
+        <p>
+          <label for="lastname">Nachname</label>
+          <input type="text" id="lastname" name="lastname" placeholder="" required maxlength="20"/>
+        </p>
+
+        <p>
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" placeholder="" required maxlength="50"/>
+        </p>
+
+        <p>
+          <label for="steet">Straße</label>
+          <input type="steet" id="steet" name="steet" placeholder="" required maxlength="50"/>
+        </p>
+
+        <p>
+          <label for="zip">PLZ</label>
+          <input type="zip" id="zip" name="zip" placeholder="" required maxlength="50"/>
+        </p>
+
+        <p>
+          <label for="city">PLZ</label>
+          <input type="city" id="city" name="city" placeholder="" required maxlength="50"/>
+        </p>
+        <p>
+          <label for="phone">Telefon</label>
+          <input type="phone" id="phone" name="phone" placeholder="" required maxlength="50"/>
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="billingAdressFields">
+        <h4>Schritt 2: Zahlungsart</h4>
+        <!--<div>-->
+          <!--<label>-->
+            <!--<input type="checkbox" name="paypal"/>-->
+            <!--Paypal-->
+          <!--</label>-->
+        <!--</div>-->
+        <!--<div>-->
+          <!--<label>-->
+            <!--<input type="checkbox" name="creditCard"/>-->
+            <!--Kreditkarte-->
+          <!--</label>-->
+        <!--</div>-->
+
+        <p>
+          <label for="cardtype">Kartentyp</label>
+          <input type="cardtype" id="cardtype" name="cardtype" placeholder="" required maxlength="50"/>
+        </p>
+
+
+        <p>
+          <label for="expireDate">Ablaufdatum</label>
+          <input type="expireDate" id="expireDate" name="expireDate" placeholder="" required maxlength="50"/>
+        </p>
+
+        <p>
+          <label for="checkSum">Prüfziffer</label>
+          <input type="checkSum" id="checkSum" name="checkSum" placeholder="" required maxlength="50"/>
+        </p>
+
+        <p>
+          <label for="zip">PLZ</label>
+          <input type="zip" id="zip" name="zip" placeholder="" required maxlength="50"/>
+        </p>
+
+        <div id="orderOverview">
+          <h4>Bestellübersicht</h4>
+
+          <table>
+            <tr>
+              <td>1. Stk.</td>
+              <td>Gutschein {{Bonbeo.getCompanyName}}</td>
+              <td>€ {{voucher.amount}}</td>
+            </tr>
+          </table>
+          <hr/>
+          <div id="totalAmount">
+            <p>€ {{voucher.amount}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="finishOrderBtn" class="col-md-12">
+      <a href="/" class=" btn checkoutButton">Bestellung abschließen</a><br>
+      <a href="/download/{{ voucher._id }}" class="btn checkoutButton" target="_blank">Herunterladen</a>
+    </div>
+  </div>
+
+  <div class="row" id="overview">
+  </div>
+</template>

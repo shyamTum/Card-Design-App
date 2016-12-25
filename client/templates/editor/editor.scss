@@ -1,0 +1,39 @@
+.imageBox{
+	position: relative;
+}
+
+.imgCont{
+	width: 750px;
+	float: right;
+}
+
+.editorContainer{
+	position: relative;
+	margin: 20px 0;
+
+	header{
+		float: left;
+	}
+}
+
+.textPlain{
+	border: 1px solid black ;
+}
+
+.DropDownBox{
+	position: absolute;
+
+    select{
+    	width: 170px;
+    	height: 45px;
+    	border: 1px solid black;
+    }
+}
+.floating-box{
+	display: inline-block;
+	position: relative;
+}
+.floating-buttons{
+	display: inline-block;
+	position: relative;
+}

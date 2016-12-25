@@ -1,0 +1,47 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+insecure
+mizzao:bootstrap-3
+underscore
+iron:router
+sacha:spin
+jquery
+u2622:persistent-session
+fourseven:scss
+chipcastledotcom:meteor-jspdf
+base64
+meteorhacks:npm
+npm-container
+pascoual:pdfkit
+meteorhacks:ssr
+meteorhacks:search-source
+accounts-base
+accounts-password
+accounts-facebook
+email
+standard-minifiers
+meteor-base
+mobile-experience
+mongo
+blaze-html-templates
+session
+tracker
+logging
+reload
+random
+ejson
+spacebars
+check
+ecmascript
+accounts-ui-unstyled
+useraccounts:bootstrap
+accounts-twitter
+accounts-google
+aldeed:autoform
+tap:i18n
+selaias:accounts-entry
+joshowens:accounts-entry
+aldeed:collection2

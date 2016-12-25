@@ -1,0 +1,96 @@
+<template name="designTemplates">
+
+  <div class="row text-center">
+    <div class="sub-nav-header">
+      {{>currentProgressNavigation}}
+      <img src="/assets/images/icons/choose_design_active.png" alt="choose design"/>
+
+      <h1>3. Design wählen</h1>
+
+      <div id="search-field" class="input-group">
+        <form>
+          <input type="text" class="form-control" placeholder="Welches Design suchst du? Stil, Anlass, ..."/>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="search-filter-nav">
+    <hr/>
+    <div id="filter-wrapper">
+      <div class="menu-outer">
+        <div class="table">
+          <ul id="horizontal-list">
+            <!--<li class="dropdown">-->
+              <!--<a class="dropdown-toggle" id="showAllCompanies" data-toggle="dropdown" aria-haspopup="true"-->
+                 <!--aria-expanded="true">-->
+                <!--Branchen-->
+                <!--<span class="caret"></span>-->
+              <!--</a>-->
+              <!--<ul class="dropdown-menu" aria-labelledby="showAllCompanies">-->
+                <!--<li>-->
+                  <!--<table style="width:100%">-->
+                    <!--<tr>-->
+                      <!--<td>Beauty & Wellness</td>-->
+                      <!--<td>Beauty & Wellness</td>-->
+                      <!--<td>Beauty & Wellness</td>-->
+                      <!--<td>Beauty & Wellness</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                      <!--<td>Essen & Trinken</td>-->
+                      <!--<td>Essen & Trinken</td>-->
+                      <!--<td>Essen & Trinken</td>-->
+                      <!--<td>Essen & Trinken</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                      <!--<td>Dienstleistungen</td>-->
+                      <!--<td>Dienstleistungen</td>-->
+                      <!--<td>Dienstleistungen</td>-->
+                      <!--<td>Dienstleistungen</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                      <!--<td>Auto</td>-->
+                      <!--<td>Auto</td>-->
+                      <!--<td>Auto</td>-->
+                      <!--<td>Auto</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                      <!--<td>Einzelhandel</td>-->
+                      <!--<td>Einzelhandel</td>-->
+                      <!--<td>Einzelhandel</td>-->
+                      <!--<td>Einzelhandel</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                      <!--<td>Mode & Lifestyle</td>-->
+                      <!--<td>Mode & Lifestyle</td>-->
+                      <!--<td>Mode & Lifestyle</td>-->
+                      <!--<td>Mode & Lifestyle</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                      <!--<td>Hotel & Gastronomie</td>-->
+                      <!--<td>Hotel & Gastronomie</td>-->
+                      <!--<td>Hotel & Gastronomie</td>-->
+                      <!--<td>Hotel & Gastronomie</td>-->
+                    <!--</tr>-->
+                  <!--</table>-->
+                <!--</li>-->
+
+              <!--</ul>-->
+            <!--</li>-->
+            <li><a href="/#">Anlass</a></li>
+            <li><a href="/#">Stil</a></li>
+            <li><a href="/#">Alle Designs anzeigen</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr/>
+  </div>
+
+
+  <div class="row" id="search-results">
+    {{#each companiesSearchResults}}
+      {{> companyItem}}
+    {{/each}}
+  </div>
+</template>

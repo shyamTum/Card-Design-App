@@ -1,0 +1,20 @@
+<template name="themesList">
+  <div id="themesHeader">
+
+    <div id="themesHeaderContent">
+      <div id="currentProgressNavigation" class="clearfix">
+        <a href="/companiesList"><img class="pull-left currentProgressIcon" src="/assets/images/icons/findlabel_icon_passive_small.png" alt=""/></a>
+        <a href="/chooseValue"><img class="pull-left currentProgressIcon" src="/assets/images/icons/value_icon_passive_small.png" alt=""/></a>
+        <a href="meine Seite"><img class="pull-left currentProgressIcon" src="/assets/images/icons/design_icon_active_small.png" alt=""/></a>
+        <a href="meine Seite"><img class="pull-left currentProgressIcon" src="/assets/images/icons/donate_icon_passive_small.png" alt=""/></a>
+      </div>
+      <img src="/assets/images/icons/design_icon_active.png" alt="laden waehlen"/>
+      <h1>3. Design wählen</h1>
+    </div>
+  </div>
+  <div class="themes">
+        {{#each companies}}
+          {{> designItem}}
+        {{/each}}
+    </div>
+</template>

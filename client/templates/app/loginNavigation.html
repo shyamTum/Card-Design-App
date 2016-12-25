@@ -1,0 +1,43 @@
+<template name="loginNavigation">
+  <div id="social-media-nav">
+    <div class="menu-outer">
+      <div class="table">
+        <ul id="horizontal-list">
+          <li><a href="http://facebook.com/me" class="social-media-icon facebook-icon" title="facebook link"></a></li>
+          <li><a href="http://twitter.com/me" class="social-media-icon twitter-icon" title="twitter link"></a></li>
+          <li><a href="http://twitter.com/me" class="social-media-icon youtube-icon" title="youtube link"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  {{#if currentUser}}
+    <div class="navbar-right" id="login-nav">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="/sign-out" id="logout" class="dropdown-toggle" data-toggle="dropdown" role="button"
+             aria-haspopup="true" aria-expanded="false">
+
+            <i class="fa fa-user"> {{currentUser.emails.[0].address}}</i>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="/profile"><i class="glyphicon glyphicon-home"></i> Profile</a></li>
+            <li><a href="/sign-out"><i class="fa fa-power-off"></i> Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  {{else}}
+    <div class="" id="login-navigation">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <div class="navbar-right">
+            <a href="/sign-in" class="navbar-btn">Login</a> |
+            <a href="/sign-up" class="navbar-btn">Anmelden</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  {{/if}}
+</template>

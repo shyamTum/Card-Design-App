@@ -1,0 +1,64 @@
+.company {
+  width: 20%;
+  height: 220px;
+  float: left;
+  margin: 2%;
+  padding: 1%;
+  border: solid black 1px;
+}
+
+.caption {
+  background: #333;
+  color: #fff;
+  font-size: 114%;
+  height: 100%;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  padding-left: 24px;
+  padding-top: 4px;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+  a {
+    border: solid #fff 2px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 14px;
+    padding: 6px;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  h4 {
+    margin-top: 20px;
+  }
+}
+
+.company-item:hover .caption {
+  opacity: 1;
+}
+
+.company-item-content {
+  margin-top: 12px;
+}
+
+.company-item-description {
+  width: 80px;
+  display: inline-block;
+}
+
+table {
+  border-spacing: 4px;
+  border-collapse: separate;
+}
+
+tr {
+  line-height: 20px;
+}

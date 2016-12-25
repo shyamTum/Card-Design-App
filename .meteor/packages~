@@ -1,0 +1,22 @@
+# Meteor packages used by this project, one per line.
+<<<<<<< HEAD
+# Check this file (and the other files in this directory) into your repository.
+=======
+>>>>>>> development
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+<<<<<<< HEAD
+meteor-platform
+insecure
+mizzao:bootstrap-3
+underscore
+iron:router
+sacha:spin
+jquery
+=======
+autopublish
+insecure
+preserve-inputs
+>>>>>>> development

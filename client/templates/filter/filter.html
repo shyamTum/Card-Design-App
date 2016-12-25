@@ -1,0 +1,24 @@
+<template name="filter">
+<!-- custom filter links-->
+<a href="#" class="fc-filter" data-fc-filter-field="type" data-fc-filter-value="customer" >
+  Show me my Customers
+</a>
+<a href="#" class="fc-filter" data-fc-filter-field="type" data-fc-filter-value="suppliers" >
+  Show me my Suppliers
+</a>
+<a href="#" class="fc-filter"
+   data-fc-filter-field="account_balance"
+   data-fc-filter-value="0"
+   data-fc-filter-operator="$lt"
+   data-fc-filter-sort="desc">
+  People who owe me money
+</a>
+<a href="#" class="fc-filter"
+   data-fc-filter-field="account_balance"
+   data-fc-filter-value="0"
+   data-fc-filter-operator="$gt"
+   data-fc-filter-sort="asc">
+  People to whom I owe money
+</a>
+<!-- /custom filter links -->
+</template>

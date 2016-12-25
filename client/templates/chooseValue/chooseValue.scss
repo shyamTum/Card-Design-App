@@ -1,0 +1,132 @@
+$color-light-black: #333;
+
+#chooseValueHeader {
+  text-align: center;
+}
+
+
+#back-to-companies-link{
+  padding-left: 4%;
+  border-top: solid #ccc 1px;
+  border-bottom: solid #ccc 1px;
+  margin-bottom: 2%;
+  margin-top: 8%;
+  height: 50px;
+  color: #ccc;
+  a{
+    font-size: 120%;
+    display: inline-block;
+    margin-top: 12px;
+    color: #ccc;
+  }
+}
+
+.dropcontainer {
+  position:relative;
+  font-size: 16px;
+  color: #777;
+}
+
+.trigger {
+  color: #777;
+  padding: 10px;
+  font-size: 16px;
+  background: #fff url(../images/select-arrow-open.png) 98% center no-repeat;
+  display: block;
+  border: 3px solid #000;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  a {
+    &:hover{
+      color: #777;
+      text-decoration: none;
+    }
+    &:focus{
+      color: #777;
+      text-decoration: none;
+    }
+  }
+}
+
+.activetrigger {
+  color: $color-light-black;
+  padding: 10px;
+  font-size: 16px;
+  background: #fff url(../images/select-arrow-close.png) 98% center no-repeat;
+  display: block;
+  border: 3px solid #000;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.activetrigger:hover {
+  background: #fff url(../images/select-arrow-close.png) 98% center no-repeat;
+  text-decoration: none;
+}
+
+.activetrigger:active {
+  background: #fff url(../images/select-arrow-close.png) 98% center no-repeat;
+  text-decoration: none;
+}
+
+.dropcontainer ul {
+  background: $color-light-black;
+  border: 3px solid #000;
+  border-top: none;
+  font-size: 16px;
+  list-style-type: none;
+  margin: 0;
+  padding: 12px;
+  text-align: left;
+  li{
+    padding: 4px;
+    a{
+      color: #fff;
+    }
+  }
+}
+
+.dropcontainer ul li:hover {
+  background: #fff;
+  outline: none;
+  a{
+    color: $color-light-black;
+  }
+}
+
+.dropcontainer ul li:first-child {
+  display: none;
+}
+
+.dropcontainer ul li:last-child {
+  border-bottom: none;
+}
+
+.dropdownhidden {
+  display: none;
+}
+
+.dropdownvisible {
+  height: auto;
+}
+
+#value-company-img img{
+  width: 100%;
+  padding-right: 0px;
+}
+
+#value-company-info{
+  background-color: $color-light-black;
+  color: #fff;
+}
+
+#value-company-wrapper{
+  margin-bottom: 8%;
+}

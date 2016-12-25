@@ -1,0 +1,39 @@
+<template name="currentProgressNavigation">
+  <div id="current-progress-nav">
+    <div id="current-progress-nav-wrapper" class="clearfix">
+      <div class="pull-left current-progress-icon">
+        <a href="/companies">
+          <img src="{{getProgressNavigationData.companies}}" alt="icon choose a company"/>
+        </a>
+        <div id="chose-company-progress-nav">{{getCompanyName}}</div>
+      </div>
+
+      <div id="value-icon-progress-nav" class="pull-left current-progress-icon">
+        <a href="/value">
+          <img src="{{getProgressNavigationData.value}}" alt="icon choose a value"/>
+        </a>
+
+        <div id="chose-value-progress-nav">{{getValueOfVoucher}}</div>
+      </div>
+
+      <div class="pull-left current-progress-icon">
+        <a href="/designTemplates">
+          <img src="{{getProgressNavigationData.designTemplates}}" alt="icon choose a template"/>
+        </a>
+      </div>
+
+      <div class="pull-left current-progress-icon">
+        <a href="/designs">
+          <img src="{{getProgressNavigationData.designs}}" alt="icon choose a design"/>
+        </a>
+      </div>
+
+
+      <div>
+        <a href="/checkout">
+          <img class="pull-left current-progress-icon" src="{{getProgressNavigationData.checkout}}" alt="checkout icon"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</template>

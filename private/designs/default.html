@@ -1,0 +1,109 @@
+<style>
+  #firstDesign {
+    margin: auto;
+    height: 1000px;
+    width: 640px;
+    border: solid black 1px;
+  }
+
+  #firstDesignHeader {
+    height: 360px;
+    background-repeat: no-repeat;
+    border-bottom: solid;
+  }
+
+  #firstDesignContent {
+    text-align: center;
+    padding-top: 4%;
+  }
+
+  #firstDesignContent h2 {
+    /*padding: 2%;*/
+    /*border: solid black 4px;*/
+    /*width: 46%;*/
+    /*margin: auto;*/
+    border: solid;
+    width: 273px;
+    letter-spacing: 6px;
+    padding: 6px;
+  }
+
+</style>
+
+<div class="row" id="firstDesign">
+
+  <div id="player">&nbsp;</div>
+  <div class="demo">
+    <div id="slider"></div>
+  </div>
+
+  <button class="set" value="25">Set to 25</button>
+  <button class="set" value="50">Set to 50</button>
+  <button class="set" value="75">Set to 75</button>
+
+  <div id="firstDesignHeader" class="test"
+       style="background-image: url('{{ rootURL }}{{imageURL}}'); background-position-x: {{voucher.imagePositionX}}px; background-position-y: {{voucher.imagePositionY}}px; background-size: {{voucher.imageScale}}%">
+  </div>
+  <div class="row" id="firstDesignContent">
+
+    <article class="text-center" id="headingFirstDesign">
+      <h2>GUTSCHEIN</h2>
+      <section id="greeting">
+        <p>
+          Lieber <input id="voucher_recipient" type="text" value="{{voucher.recipient}}">,
+        </p>
+        <p>EIN GANZ BESONDERES<br>
+          GESCHENK FÜR DICH</p>
+
+        <textarea id="voucher_description" rows="3" cols="20">{{voucher.description}}</textarea>
+
+        <p>
+          Von Herzen, <input id="voucher_sender" type="text" value="{{voucher.sender}}">
+        </p>
+
+        <div id="companyOnVoucher">
+          Firmenname: {{voucher.company}}
+        </div>
+
+        <div id="valueOnVoucher">
+          Wert: {{voucher.amount}}
+        </div>
+      </section>
+    </article>
+    <div class="row">
+      <div class="col-md-6">
+        <article>
+          <!--<h3>{{voucher.company}}</h3>-->
+          <h3>ZARA</h3>
+          <article>
+            <p>ZARA ist eines der größten Modeunternehmen der Welt. Der Kunde
+              steht im Mittelpunkt unseres besonderen Unternehmensmodells,
+              das Entwurf, Herstellung, Vertrieb und Verkauf in seinem eigenen großen
+              Filialnetz umfasst.</p>
+          </article>
+
+          <section id="value">
+            <!--<p>Wert: {{voucher.value}}</p>-->
+            <p><span class="strong">Wert: </span>10,00€</p>
+          </section>
+
+          <article id="valueText">
+            Der Gutschein ist einzulösen in allen deutschen ZARA-Filialen. Der Gutschein-Code
+            wird innerhalb von 24 Stunden aktiviert und ist ab Aktivierung 36 Monate gültig.
+            Barauszahlungen sind nicht möglich. Kein Ersatz bei Verlust oder Beschädigung.
+          </article>
+        </article>
+      </div>
+      <div class="col-md-6">
+        <section id="barcodeWrapper">
+          <p><span class="strong">Gutschein-Code:</span>000000000000</p>
+          <p><span class="strong">PIN--Code:</span>000000000</p>
+          <p><span class="strong">Aktivierungs-Datum:</span>01. JAN 2016</p>
+          <img src="assets/images/barcode.jpg" alt="barcode"/>
+        </section>
+        <p id="bonbeURL">www.bonbeo.com</p>
+        <img id="logoDesignContent" src="assets/images/logo.png" alt=""/>
+      </div>
+    </div>
+  </div>
+</div>

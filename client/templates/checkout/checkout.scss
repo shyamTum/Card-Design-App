@@ -1,0 +1,71 @@
+#orderOverview {
+  background-color: #ec6e08;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  margin-top: 4%;
+  width: 442px;
+  table {
+    width: 100%;
+    td:nth-child(3) {
+      float: right;
+      margin-right: 20px;
+    }
+  }
+}
+
+#billingAdressFields {
+  margin: auto;
+  width: 74%;
+}
+
+#totalAmount {
+  font-size: 220%;
+  text-align: right;
+  padding-right: 20px;
+}
+
+#form {
+  background-color: #FFF;
+  height: 600px;
+  width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0px;
+  text-align: center;
+}
+
+label {
+  color: #333;
+  height: 20px;
+  width: 98px;
+  margin-top: 20px;
+  margin-left: 10px;
+  text-align: left;
+  margin-right: 15px;
+  float: left;
+}
+
+.billingAdressFields input {
+  height: 44px;
+  width: 300px;
+  border: 1px solid #000;
+  margin-top: 10px;
+  border: solid #c3c2c2 1px !important;
+}
+
+#finishOrder {
+  padding-top: 10%;
+  margin-bottom: 12%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#finishOrderBtn {
+  text-align: center;
+  margin-bottom: 10%;
+}
